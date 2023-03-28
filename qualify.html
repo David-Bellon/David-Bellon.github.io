@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='src/quali.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body onload="getParam()">
+<div class="top-menu">
+  <div class="logo">
+    <img src="static/logo-F1.svg">
+  </div>
+  <div class="container-top">
+    <a href="index.html">Home</a>
+    <a href="qualify.html">Qualify</a>
+    <a href="/static">Race</a>
+    <a href="/static">Nerd Place</a>
+  </div>
+</div>
+<div class="text-driver-select">
+    SELECT ANY DRIVERS
+</div>
+<div class="driver-select" id="driver-box">
+
+</div>
+<div class="text-session-select">
+    SELECT SESSION
+</div>
+<div class="session-select" id="session-box">
+    <div class="session-self" id="fp1">
+        <p>FP1</p>
+    </div>
+    <div class="session-self" id="fp2">
+        <p>FP2</p>
+    </div>
+    <div class="session-self" id="fp3">
+        <p>FP3</p>
+    </div>
+    <div class="session-self" id="q1">
+        <p>Q1</p>
+    </div>
+    <div class="session-self" id="q2">
+        <p>Q2</p>
+    </div>
+    <div class="session-self" id="q3">
+        <p>Q3</p>
+    </div>
+    <div class="session-self" id="r">
+        <p>R</p>
+    </div>
+</div>
+<button type="button" id="laps-button" onclick="buttonClicked()">Get Laps</button>
+<div class="error-box" id="error">
+    Please Select two or less drivers and a Session
+</div>
+<div class="driver-laps-cont" id="laps-box">
+
+</div>
+
+</body>
+<script src='src/quali.js'></script>
+</html>
